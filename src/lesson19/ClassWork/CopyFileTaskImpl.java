@@ -30,4 +30,13 @@ public class CopyFileTaskImpl extends TaskImpl implements CopyFileTask {
            throw new TaskExecutionFailedException("Не копируется");
         }
     }
+
+    @Override
+    public String toString() {
+        return "CopyFileTaskImpl{" +
+                "fileFrom='" + fileFrom + '\'' +
+                ", fileTo='" + fileTo + '\'' +
+                ", copyUtils=" + copyUtils +
+                '}';
+    }
 }
